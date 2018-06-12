@@ -61,10 +61,25 @@ a:hover{ color: #22e58a; }
 
 a:active{ color: orange; }
 
+header{
+	background: linear-gradient(to top right, #ac14ce, darkblue);
+}
+
+#dws-menu,
+header label{
+	display: none;
+}
+
+#menu-svg{
+	height: 45px;
+	width: 45px;
+	padding: 10px;
+	padding-bottom: 0;
+}
+
 nav ul.top_menu{
 	display: flex;
 	justify-content: center;
-	background: linear-gradient(to top right, #ac14ce, darkblue);
 }
 
 .top_menu li{
@@ -80,12 +95,14 @@ nav ul.top_menu{
 	text-transform: uppercase;
 	border-bottom: 3px solid rgba(111,111,111,0);
 	transition: color 0.25s ease-in,
-				border-bottom-color 0.25s ease-in;
+				border-bottom-color 0.25s ease-in,
+				background-color 0.25s ease-in;
 }
 
 .top_menu li a:hover{
 	color: #ffdd1e;
 	border-bottom-color: #ffdd1e; 
+	background-color: rgba(0,0,0,0.3);
 }
 
 .wrapper{
@@ -170,28 +187,38 @@ p{ font-size: 1.1em; }
 	content: "\"";
 }
 
-.beer-type img{
+.beer-type_img{
 	float: right;
 	width: 385px;
+	height: 524px;
 	padding-left: 20px;
 	padding-bottom: 20px;
+	background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Beer.Styles.jpg/800px-Beer.Styles.jpg") no-repeat 0 0;
+	background-size: cover;
+	margin: 0 0 20px 20px;
 }
 
 .beer-type ul{
 	padding-left: 50px;
 }
 
-code pre{
+pre{
 	background: #2a2d2a;
 	padding: 10px 0 10px 20px;
-	color: #fff;
-	font-family: "Roboto Mono";
-	font-style: normal;
-	font-weight: 400;
 	-webkit-user-select: all;
     -moz-user-select: all;
     -ms-user-select: all;
     user-select: all;
+}
+
+code{
+	color: #fff;
+	font-family: "Roboto Mono";
+	font-style: normal;
+	font-weight: 400;
+
+	display: block;
+	overflow: auto;
 }
 
 span.keyword{

@@ -1,0 +1,148 @@
+header label:hover{
+	cursor: pointer;
+	/*background: rgba(0,0,0,0.3);*/
+}
+
+#menu-svg{
+	/* in main.css 73:1*/
+}
+
+
+@media all and (max-width: 1500px) {
+	.img_top{
+		height: 200px;
+		background: linear-gradient(to right, transparent 76%, grey 97%),
+	    linear-gradient(to right, transparent 54%, lightgrey 72%), 
+	    linear-gradient(to right, transparent 40%, white 52%),
+	    url("http://karlovypivovary.ru/wp-content/uploads/2016/03/2.jpg") no-repeat -10% 35%;
+	}
+
+	.img_top h1{
+		background-color: rgba(255, 255, 255, 0.65);
+	}
+
+	.quote_img{
+		margin: 40px 0 20px 6%;
+	}
+}
+
+@media all and (max-width: 1340px) {
+	.img_top h1{
+		font-size: 3.8em;
+	}
+
+	.quote_img{
+		color: red;
+		float: none;
+		margin: 40px auto 0;
+	}
+
+	.quote-block .quote-text{
+		height: 100px;
+		margin-bottom: 35px;
+	}
+
+	.quote-block .quote-text p{
+		bottom: 0;
+	}
+
+	.beer-type_img{
+		width: 340px;
+		height: 462px;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	.top_menu li a{
+		font-size: 1.5em;
+	}
+
+	.img_top{
+		background: url("http://karlovypivovary.ru/wp-content/uploads/2016/03/2.jpg") no-repeat -10% 35%;
+	}
+
+	.quote-block .quote-text{
+		font-size: 0.9em;
+	}
+
+	.beer-type_img{
+		float: none;
+		width: 300px;
+		height: 408px;
+		margin: 0 auto 20px;
+		padding-left: 0;
+	}
+
+	code pre{
+		font-size: 0.75em;
+	}
+}
+
+@media all and (max-width: 722px) {
+	.wrapper{ width: 85%; }
+
+	code{ font-size: 0.75em; }
+}
+
+@media all and (max-width: 512px) {
+	/* стили для меню */
+	header label{
+		display: block;
+	}
+
+	nav ul.top_menu{ display: block; }
+
+	nav{
+		display: none;
+	}
+
+	#dws-menu:checked ~ nav{
+		display: block;
+	}
+
+	.top_menu li a{
+		border-bottom: 3px solid #fff;
+		transition: border-bottom-width 0.25s ease-in; 
+	}
+
+	.lab-menu{
+		border-bottom: 3px solid #b60ad8;
+	}
+	/* конец стилей для меню*/
+
+	.img_top{
+		background: none;
+		height: auto;
+		text-align: center;
+	}
+
+	.img_top h1{
+		position: static;
+		font-size: 2.3em;
+	}
+
+	.img_top h1::before,
+	.img_top h1::after{
+		display: block;
+		content: "";
+		height: 10px;
+	}
+
+	h2{
+		font-size: 1.5em;
+	}
+
+	.quote_img{
+		width: 220px;
+		height: 220px;
+	}
+
+	.quote-block blockquote{
+		font-size: 1.1em;
+	}
+
+	.beer-type_img{
+		width: 240px;
+		height: 326px;
+	}
+}

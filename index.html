@@ -3,8 +3,9 @@
 <head>
 	<title>Best Beer Blog</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
-	<link rel="stylesheet" type="text/css" href="style/media.css">
+	<link rel="stylesheet" type="text/css" href="style/media.css" media="all and (max-width:1920px)">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web|Ubuntu" rel="stylesheet"><!-- sans serif for text -->
 	<!--
 	font-family: 'Ubuntu', sans-serif;
@@ -15,6 +16,24 @@
 <body>
 	<!-- top menu -->
 	<header>
+
+		<input type="checkbox" id="dws-menu">
+		<div class="lab-menu">
+			<label for="dws-menu">
+				<?xml version="1.0" encoding="utf-8"?>
+				<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+				<svg version="1.1" id="menu-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 260 211" style="enable-background:new 0 0 260 211;" xml:space="preserve">
+				<style type="text/css">
+				.st0{fill:#FFFFFF;stroke:#B7B7B7;stroke-miterlimit:10;}
+				</style>
+				<path class="st0" d="M211,73.5c0,0-146.4,0-160.7,0c-19.3,0-18.3-24,0-24c27.5,0,139.3,0,160.7,0C227.3,49.5,227.3,73.5,211,73.5z"/>
+				<path class="st0" d="M211,117.5c0,0-146.4,0-160.7,0c-19.3,0-18.3-24,0-24c27.5,0,139.3,0,160.7,0C227.3,93.5,227.3,117.5,211,117.5z"/>
+				<path class="st0" d="M211,161.5c0,0-146.4,0-160.7,0c-19.3,0-18.3-24,0-24c27.5,0,139.3,0,160.7,0C227.3,137.5,227.3,161.5,211,161.5z"/>
+				</svg>
+			</label>
+		</div>
+
 		<nav>
 			<ul class="top_menu">
 				<li><a href="">catalog</a></li>
@@ -57,7 +76,7 @@
 
 			<div class="beer-type">
 				<h2>Classification of beer</h2>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Beer.Styles.jpg/800px-Beer.Styles.jpg" alt="Classification of beer">
+				<div class="beer-type_img"></div>
 				<div>
 					<p>Currently, there is no single system of classification of beer in all its diversity. The views of American and European authors are somewhat different. However, there are some indications on which classification can be made.</p>
 					<p>But there are established individual types of beer, here are some of them:</p>
@@ -88,9 +107,8 @@
 
 			<div class="some-code">
 				<h2>Some JS code</h2>
-				<code>
-					<pre>
-<span class="keyword">function</span> addEvent(elem, evType, fn) {
+				<div class="code">
+<pre><code><span class="keyword">function</span> addEvent(elem, evType, fn) {
 	<span class="keyword">if</span> (elem.addEventListener) {
 		elem.addEventListener(evType, fn, false);
 	} <span class="keyword">else if</span> (elem.attachEvent) {
@@ -98,10 +116,9 @@
 	} <span class="keyword">else</span> {
 		elem['on' + evType] = fn
 	}
-}</pre>
-				</code>
+}</code></pre>
+				</div>
 			</div>
-
 		</div>
 	</div>
 
